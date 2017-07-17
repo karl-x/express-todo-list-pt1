@@ -1,0 +1,29 @@
+<h2>Create a New To-Do List</h2>
+
+<div class="create">
+  <form action="/todo" method="post">
+    <label for="name">Name: </label>
+    <input type="text" id="name" name="name" placeholder="Enter title here">
+
+    <label for="description">Description: </label>
+    <input type="text" id="description" name="description" placeholder="Enter text here">
+
+    <label for="completed">Completion Status: </label>
+    <input type="text" id="completed" name="completed" placeholder="Please state true / false">
+    <button type="submit">Create</button>
+  </form>
+</div>
+
+<div class="display">
+  <ul style="text-align:left">
+    <h2>Existing To-Dos</h2>
+    {{#each todos as |todo|}}
+    <li>
+      <strong>Name:</strong> {{ todo.name }} <br />
+      <strong>Description:</strong> {{ todo.description}} <br />
+      <strong>Completed:</strong> {{ todo.completed }}
+    </li>
+    <br />
+    {{/each}}
+  </ul>
+</div>

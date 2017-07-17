@@ -4,7 +4,7 @@
   "description": "Express Todo List",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "nodemon index index.js",
     "test": "node test/todo_tests.js"
   },
   "repository": {
@@ -12,6 +12,19 @@
     "url": "git+https://github.com/wdi-sg/express-todo-list-pt1.git"
   },
   "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^4.11.3",
+    "nodemon": "^1.11.0",
     "uuid": "^3.0.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/wdi-sg/express-todo-list-pt1/issues"
+  },
+  "homepage": "https://github.com/wdi-sg/express-todo-list-pt1#readme",
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

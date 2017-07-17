@@ -1,0 +1,13 @@
+<h2>Welcome to To-Do Manager, Here are Your Tasks:</h2>
+<div class="display">
+  {{!-- <ul style="text-align:left"> --}}
+    {{#each todos as |todo|}}
+    <li>
+      <strong>Name:</strong> {{ todo.name }} <br />
+      <strong>Description:</strong> {{ todo.description}} <br />
+      <strong>Completed:</strong> {{ todo.completed }}
+    </li>
+    <br />
+    {{/each}}
+  {{!-- </ul> --}}
+</div>
